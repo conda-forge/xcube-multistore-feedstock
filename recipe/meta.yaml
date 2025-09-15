@@ -1,5 +1,5 @@
 {% set name = "xcube-multistore" %}
-{% set version = "0.1.0" %}
+{% set version = "0.2.0" %}
 {% set python_min = "3.10" %}
 
 package:
@@ -8,10 +8,10 @@ package:
 
 source:
   url: https://github.com/xcube-dev/xcube-multistore/archive/v{{ version }}.tar.gz
-  sha256: 9074ec42f9a9929dca16ebc271a6d810ecc125d30d218f1027aa5ace9c28f977
+  sha256: e15ffefe560d6a12f4bb3eee0e240c300783cdad80cdf73cd57fd9cf0db5faa6
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
 
