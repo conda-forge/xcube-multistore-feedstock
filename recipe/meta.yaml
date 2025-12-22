@@ -1,5 +1,5 @@
 {% set name = "xcube-multistore" %}
-{% set version = "0.2.0" %}
+{% set version = "0.3.0" %}
 {% set python_min = "3.10" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://github.com/xcube-dev/xcube-multistore/archive/v{{ version }}.tar.gz
-  sha256: c629e1c47f1eaa60996a350b3716fc697f8805481f738a1f9b073d33b9c600ed
+  sha256: 9716b6e0e19bf307ff44fe6105c229cd179e3bcb93811676c4f05b927bde8196
 
 build:
   number: 0
@@ -25,14 +25,16 @@ requirements:
     - dask
     - fsspec
     - numpy
+    - panel
     - pyproj
     - tabulate
     - xarray
     - xcube >=1.9.0
-    - xcube-cci >=0.11.2
+    - xcube-resampling >=0.2.3
+    - xcube-cci >=0.11.2,<=0.11.10
     - xcube-cds >=1.0.0
     - xcube-clms >=0.2.2
-    - xcube-stac >=1.1.0
+    - xcube-stac >=1.1.2
     - xcube-zenodo >=1.0.0
     - yaml
 
