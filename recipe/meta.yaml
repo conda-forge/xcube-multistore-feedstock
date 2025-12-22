@@ -25,6 +25,7 @@ requirements:
     - dask
     - fsspec
     - numpy
+    - panel
     - pyproj
     - tabulate
     - xarray
