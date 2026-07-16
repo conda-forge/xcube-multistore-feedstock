@@ -27,6 +27,7 @@ requirements:
     - numpy
     - panel
     - pyproj
+    - pystac-client
     - tabulate
     - xarray
     - xcube >=1.13.1
