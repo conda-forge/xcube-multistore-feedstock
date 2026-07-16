@@ -1,5 +1,5 @@
 {% set name = "xcube-multistore" %}
-{% set version = "0.3.3" %}
+{% set version = "0.3.4" %}
 {% set python_min = "3.10" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://github.com/xcube-dev/xcube-multistore/archive/v{{ version }}.tar.gz
-  sha256: 0e994fbee94734f78f0190d09369946e98ea374fc09547cf4777ae0d5f921582
+  sha256: 2ae9ac2e334407556c43fe76637d3b55476a88bfb83568b157a7f52ad9af1e05
 
 build:
   number: 0
@@ -27,6 +27,7 @@ requirements:
     - numpy
     - panel
     - pyproj
+    - pystac-client
     - tabulate
     - xarray
     - xcube >=1.13.1
